@@ -1,3 +1,4 @@
+
 export interface LifeStats {
   years: number;
   months: number;
@@ -13,17 +14,37 @@ export interface LifeStats {
   timeSlept: number;
   timeEating: number;
   timeHygiene: number;
-  timeScreens: number;
+  timeWorkSchool: number;
+  timePhoneScreens: number;
+  timeNetflix: number;
   
   // Biological & Physics
   breathsTaken: number;
   heartbeats: number;
-  distanceWalkedKm: number; // Avg 5km/day
-  distanceSpaceKm: number; // Earth orbit speed ~107,000 km/h
+  distanceWalkedKm: number;
+  distanceSpaceKm: number;
+  
+  // New Mathematical/Fun Stats
+  weekendsLived: number;
+  fullMoonsSeen: number;
+  blinks: number;
+  wordsSpoken: number;
+  hairGrowthCm: number;
+  dreamsHad: number;
+  bloodPumpedLiters: number;
+  sunrisesSeen: number;
+  earthOrbits: number;
   
   // Life Progress
   lifeExpectancyYears: number;
   percentageLived: number;
+  
+  // Countdowns & Info
+  zodiacSign: string;
+  nextBirthdayCountdown: string; // Formatted D:H:M:S
+  endOfYearCountdown: string;    // Formatted D:H:M:S
+  mementoMoriCountdown: string;  // Formatted Y:D:H:M:S
+  deathDate: Date;
 }
 
 export type Gender = 'male' | 'female' | 'other';
@@ -36,4 +57,10 @@ export interface Quote {
 export interface UserConfig {
   birthDate: Date;
   gender: Gender;
+}
+
+export interface HistoricalEvent {
+  year: number;
+  title: string;
+  description: string;
 }
