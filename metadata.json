@@ -1,0 +1,5 @@
+{
+  "name": "ChronoLife",
+  "description": "Aplikacja wizualizująca upływający czas życia z precyzją co do milisekundy, wzbogacona o filozoficzne cytaty.",
+  "requestFramePermissions": []
+}
